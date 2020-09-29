@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clazz_2',['clazz',['../classclazz.html',1,'']]]
+  ['clazz_3',['clazz',['../classclazz.html',1,'']]]
 ];
