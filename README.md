@@ -7,7 +7,9 @@ Status](http://www.repostatus.org/badges/latest/concept.svg)](http://www.reposta
 
 ## About
 
-This repository hosts an example template for the folder structure of a C++ project
+This repository hosts an example template for the folder structure of a C++ project. 
+Additionally, you can find a Dockerfile that sets up a C++ programming environment [here](https://github.com/dirmeier/dockerfiles/blob/master/cppenv/Dockerfile).
+
 
 ## Dependencies
 
