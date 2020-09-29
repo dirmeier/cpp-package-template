@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>cppdev: Main Page</title>
+<title>cppdev: cppdev-template</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,11 +60,55 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">cppdev Documentation</div>  </div>
+<div class="title">cppdev-template </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> <a href="http://www.repostatus.org/#concept"><img src="http://www.repostatus.org/badges/latest/concept.svg" alt="Project Status" style="pointer-events: none;" class="inline"/></a></p>
+<blockquote class="doxtable">
+<p>A template for C++ projects </p>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md1"></a>
+About</h1>
+<p>This repository hosts an example template for the folder structure of a C++ project. Additionally, you can find a Dockerfile that sets up a C++ programming environment <a href="https://github.com/dirmeier/dockerfiles/blob/master/cppenv/Dockerfile">here</a>.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Dependencies</h1>
+<p>To build the C++ library, you need to the following dependencies:</p>
+<ul>
+<li><code>make</code>, <code>meson</code> and <code>ninja</code> as build tools (instead of autotools or cmake)</li>
+</ul>
+<p>To run the unit tests, lints and everyhthing you'll need</p>
+<ul>
+<li><a href="https://github.com/google/googletest"><code>googletest</code></a>,</li>
+<li><code>clang-format</code> for code formatting,</li>
+<li><code>cpplint</code>, <code>cppcheck</code> for static code analysis.</li>
+</ul>
+<p>To create documentation files you also need to install</p>
+<ul>
+<li><code>doxygen</code></li>
+</ul>
+<p>You can install most dependencies using conda. <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Usage</h1>
+<p>Clone/download the project and run:</p>
+<div class="fragment"><div class="line">make</div>
+</div><!-- fragment --><p>This build a shared library called <code>libcppdev.so</code> in <code>build/src/</code>, an executable called <code>cppdev</code> and a unit test suite in <code>build/tests</code>/</p>
+<p>In debug mode:</p>
+<div class="fragment"><div class="line">make debug</div>
+</div><!-- fragment --><p>To document everything call:</p>
+<div class="fragment"><div class="line">make docs</div>
+</div><!-- fragment --><p>This builds de</p>
+<p>To run unit tests, lints, etc. call:</p>
+<div class="fragment"><div class="line">make test</div>
+<div class="line">make format</div>
+<div class="line">make lint</div>
+<div class="line">make check</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+Author</h1>
+<p>Simon Dirmeier <a href="#" onclick="location.href='mai'+'lto:'+'sim'+'on'+'.di'+'rm'+'eie'+'r '+'@ w'+'eb'+'.de'; return false;">simon.dirmeier @ web.de</a> </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
