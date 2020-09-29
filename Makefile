@@ -19,6 +19,9 @@ debug:
 clean:
 	rm -rf build
 
+docs:
+	doxygen
+
 test: build
 	meson test -C build -v
 

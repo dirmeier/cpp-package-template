@@ -5,13 +5,33 @@
 #include <utility>
 #include <vector>
 
+/*!
+ * \brief A brief description of the class
+ *
+ * A longer description of the class
+ */
 class clazz {
  public:
+    /*!
+     * \brief Constructor
+     *
+     * A more elaborate description of the constructor.
+     *
+     * \param vec an rvalue reference
+     */
   explicit clazz(const std::vector<int>&& vec) : vec_(std::move(vec)) {}
 
+    /*!
+     * \brief Add method
+     *
+     * A method to add an integer to the vector
+     *
+     * \param k the value to add to the vector
+     * \return void
+     */
   void add(int k);
 
-  const std::vector<int> get() { return vec_; }
+  const std::vector<int>& get() { return vec_; }
 
   friend std::ostream& operator<<(std::ostream& os, clazz& cl) {
     for (int i = 0; i < (int) cl.vec_.size(); ++i) {

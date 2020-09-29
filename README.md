@@ -3,7 +3,7 @@
 [![Project
 Status](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
 
-> A template for a C++ projects
+> A template for C++ projects
 
 ## About
 
@@ -21,9 +21,13 @@ To run the unit tests, lints and everyhthing you'll need
 - `clang-format` for code formatting,
 - `cpplint`, `cppcheck` for static code analysis.
 
+To create documentation files you also need to install 
+
+- `doxygen`
+
 You can install most dependencies using conda.  
 
-## Install
+## Usage
 
 Clone/download the project and run:
 
@@ -31,13 +35,22 @@ Clone/download the project and run:
 make
 ```
 
-or in debug mode:
+This build a shared library called `libcppdev.so` in `build/src/`, an executable called `cppdev` and 
+a unit test suite in `build/tests`/
+
+In debug mode:
 
 ```bash
 make debug
 ```
 
-This build a shared library called `libcppdev.so` in `build/src/`.
+To document everything call:
+
+```bash
+make docs
+```
+
+This builds de
 
 To run unit tests, lints, etc. call:
 
@@ -47,10 +60,6 @@ make format
 make lint
 make check
 ```
-
-## Documentation
-
-TODO
 
 ## Author
 
