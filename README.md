@@ -2,6 +2,8 @@
 
 [![Project
 Status](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
+![ci](https://github.com/dirmeier/cppdev-template/workflows/ci/badge.svg)
+
 
 > A template for C++ projects
 
