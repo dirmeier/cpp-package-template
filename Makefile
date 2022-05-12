@@ -31,7 +31,7 @@ format:
 	clang-format -i tests/*cpp
 
 lint:
-	cpplint --filter=-legal/copyright,-readability/casting,-whitespace/comments \
+	cpplint --filter=-legal/copyright,-readability/casting,-whitespace/comments,-build/include_subdir \
 	  src/*.cpp include/*.hpp
 
 check:
